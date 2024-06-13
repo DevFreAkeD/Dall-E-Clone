@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormFields } from '../components';
+import { Loader, FormFields } from '../components';
 import { getRandomPrompt } from '../utils';
 import { preview } from '../assets';
 
@@ -36,10 +36,6 @@ const CreatePost = () => {
     } else {
       alert('Please enter the prompt.');
     }
-  };
-
-  const handleSubmit = () => {
-
   };
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
@@ -82,9 +78,9 @@ const CreatePost = () => {
           <button
             type="button"
             onClick={generateImage}
-            className=" text-white bg-blue-500 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="text-white bg-[#375cb0] font-medium text-sm w-40 px-5 py-2.5 text-center rounded-full text-nowrap min-h-button flex items-center justify-center gap-[0.3em]"
           >
-            {generatingImage ? 'Generating...' : 'Generate'}
+            {generatingImage ? 'Generating...' : 'Generate'} {generatingImage && <Loader />}
           </button>
         </div>
       </form>
