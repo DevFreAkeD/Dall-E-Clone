@@ -56,17 +56,8 @@ const CreatePost = () => {
         <p className="mt-2 text-[#666e75] text-[16px] max-w-full">Generate an imaginative image through DALL-E AI and share it with the community.</p>
       </div>
 
-      <form className="mt-16">
+      <form className="mt-10">
         <div className="flex flex-col gap-5">
-          <FormFields
-            labelName="Your Name"
-            type="text"
-            name="name"
-            placeholder="Ex: Tony Stark"
-            value={form.name}
-            handleChange={handleChange}
-          />
-
           <FormFields
             labelName="Prompt"
             type="text"
@@ -94,16 +85,6 @@ const CreatePost = () => {
             className=" text-white bg-blue-500 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             {generatingImage ? 'Generating...' : 'Generate'}
-          </button>
-        </div>
-
-        <div className="mt-10">
-          <p className="mt-2 text-[#666e75] text-[14px]">** Once you have created the image you want, you can share it with others in the community **</p>
-          <button
-            type="submit"
-            className="mt-3 text-white bg-[#375cb0] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-          >
-            Share
           </button>
         </div>
       </form>
