@@ -6,7 +6,6 @@ import { preview } from '../assets';
 const CreatePost = () => {
 
   const [form, setForm] = useState({
-    name: '',
     prompt: '',
     photo: '',
   });
