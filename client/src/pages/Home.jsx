@@ -18,8 +18,8 @@ const Home = () => {
           </div>
 
           <div className="flex mt-3 min-h-s justify-center">
-            <Link 
-              to="/create-post" 
+            <button 
+              href="/create-post" 
               className="text-white bg-[#375cb0] font-medium text-sm w-40 px-5 py-2.5 text-center rounded-full text-nowrap min-h-button flex items-center justify-center gap-[0.3em] text-cta"
               target="_blank" 
               rel="noreferrer"
@@ -29,7 +29,7 @@ const Home = () => {
                 <path d="M1 9L9 1M9 1H2.5M9 1V7.22222" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"></path>
               </svg>
               <span className="sr-only">(opens in a new window)</span>
-            </Link>
+            </button>
           </div>
 
           <div className="flex justify-center mt-10">
