@@ -1,4 +1,8 @@
 # ![Untitled design (18)](https://github.com/DevFreAkeD/Dall-E-Clone/assets/32740788/d1c4f450-5a5b-4ced-a566-060acfa10028)
+## 📃 About
+DALL-E Clone, designed to generate images from textual descriptions. It is based on the GPT (Generative Pre-trained Transformer) architecture, specifically optimized for the creation of images.
+
+Live Link: <a href="dalle-replica.netlify.app/">Here</a>
 
 ## ⚙️ Tech Used
 Languages/Libraries/Frameworks/Tools/etc used to develop CoDevCompile.
